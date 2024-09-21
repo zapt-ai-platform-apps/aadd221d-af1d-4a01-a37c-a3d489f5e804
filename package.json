@@ -1,0 +1,28 @@
+{
+  "name": "joke-app",
+  "version": "1.0.0",
+  "description": "A Joke app with SolidJS, Tailwind, and Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run generate && npm run migrate && vite build",
+    "serve": "vite preview",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "node --loader ts-node/esm --experimental-specifier-resolution=node ./scripts/migrate.ts"
+  },
+  "dependencies": {
+    "solid-js": "^1.6.10",
+    "drizzle-orm": "^0.28.6",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.4",
+    "vite-plugin-solid": "^2.5.0",
+    "drizzle-kit": "^0.20.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
