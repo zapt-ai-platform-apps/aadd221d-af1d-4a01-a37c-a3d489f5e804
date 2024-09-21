@@ -29,9 +29,14 @@ The Joke App allows users to view a list of jokes and add new jokes to the datab
 
 ## Steps to Use the App
 
-1. Open the app in your web browser.
-2. Read through the existing jokes displayed.
-3. To add a new joke, enter the joke's setup and punchline in the respective input fields.
-4. Click the "Add Joke" button.
-5. Wait for the "Adding..." indicator to complete.
-6. The new joke will appear at the top of the joke list.
+1. **Open the App**: Launch the app in your web browser.
+2. **View Jokes**: Browse through the list of jokes displayed on the page.
+3. **Add a New Joke**:
+   - Enter the joke's setup in the "Setup" input field.
+   - Enter the joke's punchline in the "Punchline" input field.
+   - Click the "Add Joke" button.
+4. **Wait for Confirmation**: The "Add Joke" button will display "Adding..." while your joke is being submitted.
+5. **See Your Joke**: Once added, your new joke will appear at the top of the joke list.
+6. **Error Handling**: If there's an error during submission, check the console for error messages.
+
+Enjoy sharing and reading jokes!

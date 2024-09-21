@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "npm run generate && npm run migrate && vite build",
     "serve": "vite preview",
-    "generate": "drizzle-kit generate:pg",
-    "migrate": "node --loader ts-node/esm --experimental-specifier-resolution=node ./scripts/migrate.ts"
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
   },
   "dependencies": {
     "solid-js": "^1.6.10",
     "drizzle-orm": "^0.33.0",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "@supabase/supabase-js": "^2.10.0",
+    "solid-markdown": "^2.0.13"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -21,8 +23,6 @@
     "tailwindcss": "^3.2.7",
     "vite": "^5.4.7",
     "vite-plugin-solid": "^2.5.0",
-    "drizzle-kit": "^0.24.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "drizzle-kit": "^0.24.2"
   }
 }

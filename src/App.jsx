@@ -43,8 +43,8 @@ function App() {
   });
 
   return (
-    <div class="h-full flex flex-col items-center justify-center bg-gray-100 text-gray-800">
-      <div class="w-full max-w-2xl p-6 bg-white rounded-lg shadow-md">
+    <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800">
+      <div class="w-full max-w-2xl p-6 bg-white rounded-lg shadow-md h-full">
         <h1 class="text-3xl font-bold mb-6 text-center">Joke App</h1>
         <form onSubmit={handleCreateJoke} class="mb-6">
           <input
@@ -64,7 +64,7 @@ function App() {
           <button
             type="submit"
             class="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer"
-            disabled={loading()}
+            disabled={loading() || !newJoke().setup || !newJoke().punchline}
           >
             {loading() ? 'Adding...' : 'Add Joke'}
           </button>
